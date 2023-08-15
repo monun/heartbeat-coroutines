@@ -1,0 +1,13 @@
+[versions]
+kotlin = "1.8.22"
+dokka = "1.8.20"
+coroutines = "1.7.3"
+paper = "1.18-R0.1-SNAPSHOT"
+
+[libraries]
+paper = {module = "io.papermc.paper:paper-api", version.ref="paper"}
+coroutines = {module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref="coroutines"}
+
+[plugins]
+kotlin = {id = "org.jetbrains.kotlin.jvm", version.ref="kotlin"}
+dokka = {id = "org.jetbrains.dokka", version.ref="dokka"}

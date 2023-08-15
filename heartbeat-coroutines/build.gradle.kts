@@ -1,5 +1,5 @@
 plugins {
-    id("org.jetbrains.dokka") version Dependency.Dokka.Version
+    alias(libs.plugins.dokka)
     `maven-publish`
     signing
 }
@@ -77,6 +77,15 @@ publishing {
                         email.set("monun1010@gmail.com")
                         url.set("https://github.com/monun")
                         roles.addAll("developer")
+                        timezone.set("Asia/Seoul")
+                    }
+                }
+
+                contributors {
+                    contributor {
+                        name.set("zlfn")
+                        email.set("ung@zlfn.space")
+                        url.set("https://zlfn.space")
                         timezone.set("Asia/Seoul")
                     }
                 }

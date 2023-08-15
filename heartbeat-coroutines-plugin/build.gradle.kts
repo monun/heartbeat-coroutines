@@ -9,9 +9,9 @@ dependencies {
 extra.apply {
     set("pluginName",  rootProject.name.split('-').joinToString("") { it.capitalize() })
     set("packageName", rootProject.name.replace("-", "."))
-    set("kotlinVersion", Dependency.Kotlin.Version)
-    set("coroutinesVersion", Dependency.Coroutines.Version)
-    set("paperVersion", Dependency.Paper.Version)
+    set("kotlinVersion", libs.versions.kotlin)
+    set("coroutinesVersion", libs.versions.coroutines)
+    set("paperVersion", libs.versions.paper)
 }
 
 tasks {
